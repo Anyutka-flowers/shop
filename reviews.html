@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анютка - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/layout/logo mobile.svg" type="image/x-icon">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/reviews.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper wrapper">
+                <a href="index.html" class="logo">
+                    <img class="logo__desktop" src="img/layout/logo.svg" alt="">
+                    <img class="logo__mobile" src="img/layout/logo mobile.svg" alt="">
+                </a>
+                <nav>
+                    <div id="nav-close"></div>
+                    <a href="catalogue.html">Каталог</a>
+                    <a href="about.html">О нас</a>
+                    <a href="reviews.html">Отзывы</a>
+                </nav>
+                <div id="nav-open"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="reviews">
+            <div class="container">
+                <h2>Отзывы</h2>
+                <div class="reviews__wrapper wrapper">
+                    <div class="reviews__list">
+                        
+                    </div>
+
+                    <form class="add-review">
+                        <h3>Добавить отзыв</h3>
+                        <label for="name">
+                            <h4>Имя</h4>
+                        </label>
+                        <input required placeholder="Ваше имя" id="name" type="text">
+                        <label for="name">
+                            <h4>Отзыв</h4>
+                        </label>
+                        <textarea required placeholder="Расскажите свое мнение о товаре" id="text"></textarea>
+                        <h4>Оценка</h4>
+                        <div class="add-review__rating">
+                            <img src="img/icons/star grey.svg" alt="" class="add-review__star">
+                            <img src="img/icons/star grey.svg" alt="" class="add-review__star">
+                            <img src="img/icons/star grey.svg" alt="" class="add-review__star">
+                            <img src="img/icons/star grey.svg" alt="" class="add-review__star">
+                            <img src="img/icons/star grey.svg" alt="" class="add-review__star">
+                        </div>
+                        <button id="send-review" class="button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="index.html" class="logo">
+                    <img class="logo__mobile" src="img/layout/logo mobile.svg" alt="">
+                </a>
+                <p class="copyright">
+                    © 2025 Анютка
+                </p>
+                <a href="tel:89243456789" class="footer__phone"><img src="img/contacts/phone.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

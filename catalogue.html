@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анютка - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/layout/logo mobile.svg" type="image/x-icon">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/catalogue.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper wrapper">
+                <a href="index.html" class="logo">
+                    <img class="logo__desktop" src="img/layout/logo.svg" alt="">
+                    <img class="logo__mobile" src="img/layout/logo mobile.svg" alt="">
+                </a>
+                <nav>
+                    <div id="nav-close"></div>
+                    <a href="catalogue.html">Каталог</a>
+                    <a href="about.html">О нас</a>
+                    <a href="reviews.html">Отзывы</a>
+                </nav>
+                <div id="nav-open"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="catalogue">
+            <div class="container">
+                <h2></h2>
+                <div class="catalogue__wrapper wrapper">
+                    <div class="catalogue__list">
+                        
+
+                    </div>
+
+                    <form class="filters">
+                        <h3>Фильтры</h3>
+
+                        <h4>На одной странице</h4>
+                        <div class="radio__wrapper">
+                            <div class="radio">
+                                <input type="radio" checked name="onPage" id="twenty" value="20">
+                                <label for="twenty">20</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="onPage" id="thirty-five" value="35">
+                                <label for="thirty-five">35</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="onPage" id="fifty" value="50">
+                                <label for="fifty">50</label>
+                            </div>
+                        </div>
+
+                        <h4>Сортировка</h4>
+                        <div class="radio__wrapper">
+                            <div class="radio">
+                                <input type="radio" name="sort" id="name" value="name">
+                                <label for="name">По названию</label>
+                            </div>
+                            <div class="radio">
+                                <input checked type="radio"  name="sort" id="rating" value="rating">
+                                <label for="rating">По рейтингу</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" name="sort" id="price" value="price">
+                                <label for="price">По цене</label>
+                            </div>
+                        </div>
+                        <h4>Категория</h4>
+                        <div class="category__select">
+                            <select name="" id="category" class="category">
+                                <option selected value="all">Все</option>
+                                <option value="Розы">Розы</option>
+                                <option value="Кустовая роза">Кустовая роза</option>
+                                <option value="Букеты">Букеты</option>
+                                <option value="Монобукеты">Монобукеты</option>
+                                <option value="Корзины">Корзины</option>
+                                <option value="Горшочные растения">Горшочные растения</option>
+                                <option value="Шарики">Шарики</option>
+                                <option value="Мягкие игрушки">Мягкие игрушки</option>
+                            </select>
+                        </div>
+                        <button id="search" class="button">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="pagination">
+            <div class="container">
+                <div class="pagination__wrapper wrapper">
+                    <img src="img/icons/arrow.svg" alt="" id="arrow-left">
+                    <div class="pagination__pages">
+                        
+                    </div>
+                    <img src="img/icons/arrow.svg" alt="" id="arrow-right">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="index.html" class="logo">
+                    <img class="logo__mobile" src="img/layout/logo mobile.svg" alt="">
+                </a>
+                <p class="copyright">
+                    © 2025 Анютка
+                </p>
+                <a href="tel:89243456789" class="footer__phone"><img src="img/contacts/phone.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
