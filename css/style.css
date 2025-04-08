@@ -783,6 +783,15 @@ option {
     .hero__wrapper{
         padding: 115px 0 15px;
     }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .double__description{
+        font-size: 20px;
+    }
     .copyright{
         font-size: 20px;
     }
